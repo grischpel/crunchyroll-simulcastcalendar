@@ -3,48 +3,49 @@ Filter for release calendar. You can filter for language, currently watching and
 
 language depends on crunchyroll language settings
 
-# Anleitung zur Nutzung des Simulcast Filter Skripts im Browser
+# How to Install the Simulcast Filter as a Browser Extension
 
-Diese Anleitung beschreibt, wie du das Filter-Skript im Browser nutzen kannst, wenn du es über Git heruntergeladen hast.
-
----
-
-## 1. Voraussetzungen
-
-- Du benötigst einen UserScript-Manager im Browser, z.B.:
-  - [Tampermonkey](https://www.tampermonkey.net/) (für Chrome, Firefox, Edge, Safari)
-  - oder [Greasemonkey](https://addons.mozilla.org/firefox/addon/greasemonkey/) (für Firefox)
-
----
-
-## 2. Skript vorbereiten
-
-- Klone oder lade das Repository mit dem Skript auf deinen Computer:
-
-```bash
-git clone https://github.com/dein-repo/simulcast-filter.git
-```
----- English ----
-# How to Use the Simulcast Filter Script in Your Browser
-
-This guide explains how to install and use the Simulcast Filter script in your browser if you have downloaded it from Git.
+1. Download or clone the repository with the extension files.
+2. Open your browser and go to the extension/add-ons store.
+3. Search for your extension (if published) or load it manually.
+4. If you want to install manually:
+   - In Chrome/Edge, go to `chrome://extensions` or `edge://extensions`.
+   - Enable **Developer Mode**.
+   - Click **Load unpacked** and select the extension folder.
+5. The extension will activate and the filters will appear on the simulcast calendar page.
 
 ---
 
-## 1. Prerequisites
+# Anleitung zur Installation der Simulcast Filter Browser-Erweiterung
 
-- You need a UserScript manager like:
-  - [Tampermonkey](https://www.tampermonkey.net/) (for Chrome, Firefox, Edge, Safari)
-  - or [Greasemonkey](https://addons.mozilla.org/firefox/addon/greasemonkey/) (for Firefox)
+1. Lade das Repository mit den Erweiterungsdateien herunter oder klone es.
+2. Öffne den Browser und gehe zum Erweiterungs-Store.
+3. Suche deine Erweiterung (wenn veröffentlicht) oder lade sie manuell.
+4. Für manuelle Installation:
+   - Öffne in Chrome/Edge `chrome://extensions` oder `edge://extensions`.
+   - Aktiviere den **Entwicklermodus**.
+   - Klicke auf **Entpackte Erweiterung laden** und wähle den Erweiterungsordner aus.
+5. Die Erweiterung ist aktiv und die Filter erscheinen auf der Simulcast-Kalender-Seite.
+
+
+# How to Install the Simulcast Filter Using Developer Mode
+
+1. Download or clone the extension repository.
+2. Open your browser and navigate to `chrome://extensions` (Chrome) or `edge://extensions` (Edge).
+3. Enable **Developer Mode** (toggle top-right).
+4. Click on **Load unpacked**.
+5. Select the folder where the extension files are located.
+6. The extension will be installed and active.
+7. Visit the simulcast calendar website; the filters will now appear.
 
 ---
 
-## 2. Using the Script with a UserScript Manager
+# Installation der Simulcast Filter Erweiterung im Entwicklermodus
 
-### a) Prepare the Script
-
-- Clone or download the repository containing the script:
-
-```bash
-git clone https://github.com/your-repo/simulcast-filter.git
-```
+1. Lade das Repository mit den Erweiterungsdateien herunter oder klone es.
+2. Öffne deinen Browser und gehe zu `chrome://extensions` (Chrome) oder `edge://extensions` (Edge).
+3. Aktiviere den **Entwicklermodus** (Schalter oben rechts).
+4. Klicke auf **Entpackte Erweiterung laden**.
+5. Wähle den Ordner aus, in dem sich die Erweiterungsdateien befinden.
+6. Die Erweiterung wird installiert und aktiv sein.
+7. Öffne die Simulcast-Kalender-Seite, die Filter werden angezeigt.
