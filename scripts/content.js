@@ -378,6 +378,7 @@
         applyLanguageFilter(savedLangs);
       }
     }
+	applyAlternatingRowStyles();
   };
 
   Promise.all(fetches).then(() => {

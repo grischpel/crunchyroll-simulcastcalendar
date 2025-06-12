@@ -1,7 +1,7 @@
 {
     "name": "Crunchyroll Release Calendar Filter",
     "description": "Filter for release calendar. You can filter for language, currently watching and dubbed/subbed",
-    "version": "0.1.4",
+    "version": "0.1.5",
     "manifest_version": 3,
     "icons": {
         "128": "icons/128.png"
