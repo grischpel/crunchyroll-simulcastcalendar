@@ -40,6 +40,7 @@ language depends on crunchyroll language settings
 5. Save the script.
 6. Visit the simulcast calendar page — the filters will be injected automatically.
 7. To update, replace the script content with a new version.
+(css files are not included in this install method)
 
 ---
 
@@ -52,3 +53,4 @@ language depends on crunchyroll language settings
 5. Speichere das Skript.
 6. Öffne die Simulcast-Kalender-Seite — die Filter werden automatisch eingebunden.
 7. Zur Aktualisierung ersetzt du den Skriptinhalt durch die neue Version.
+(css dateien sind nicht enthalten bei dieser Installtaionsmethode)
