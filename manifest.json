@@ -12,7 +12,8 @@
 			"js": ["scripts/content.js"],
 			"css": ["styles/content.css"],
 			"matches": [
-				"https://www.crunchyroll.com/*/simulcastcalendar*"
+				"https://www.crunchyroll.com/*/simulcastcalendar*",
+				"https://www.crunchyroll.com/simulcastcalendar*"
 			]
 		}
 	]
