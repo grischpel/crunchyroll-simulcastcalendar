@@ -1,0 +1,19 @@
+{
+    "name": "Crunchyroll Release Calendar Filter",
+    "description": "Filter for release calendar. You can filter for language, currently watching and dubbed/subbed",
+    "version": "0.1.0",
+    "manifest_version": 3,
+    "icons": {
+        "128": "icons/128.png"
+    },
+	"permissions": ["scripting", "activeTab"],
+	"content_scripts": [
+		{
+			"js": ["scripts/content.js"],
+			"css": ["styles/content.css"],
+			"matches": [
+				"https://www.crunchyroll.com/*/simulcastcalendar*"
+			]
+		}
+	]
+}
