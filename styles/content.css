@@ -5,11 +5,7 @@
 	position: relative;
 	padding-bottom: 1em !important;
 }
-.extension-filter-form .in-queue-checkbox-label{
-	position: absolute;
-	right: 0;
-	top: 0;
-}
+
 .extension-filter-form h3 {
     margin-bottom: 0.5rem;
     text-align: center;
@@ -80,31 +76,6 @@
 }
 .extension-filter-label{
 	font-size: medium;
-}
-/* Reset Button Style */
-.language-reset-button {
-  background-color: rgb(255, 100, 10);
-  color: white;
-  border: none;
-  border-radius: 5px;
-  padding: 0.5rem 1rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-  box-shadow: 0 4px 8px rgba(255, 100, 10, 0.4);
-  user-select: none;
-}
-
-.language-reset-button:hover {
-  background-color: rgb(255, 130, 30);
-  transform: scale(1.05);
-  box-shadow: 0 6px 12px rgba(255, 130, 30, 0.6);
-}
-
-/* Weicher "Pop" Effekt bei Klick */
-.language-reset-button:active {
-  transform: scale(0.95);
-  box-shadow: 0 3px 6px rgba(255, 100, 10, 0.3);
 }
 
 /* Checkbox und Radio Container */
@@ -183,25 +154,34 @@
   }
 }
 
-
-.in-queue-checkbox-label {
+.in-queue-checkbox-label, .language-reset-button {
   display: inline-flex;
   align-items: center;
   background: #f0f0f0;
   border: 1px solid #ccc;
   border-radius: 6px;
   padding: 0.4rem 0.75rem;
-  margin: 0.25rem;
+  font-weight: 600;
   font-size: 0.9rem;
-  font-weight: 500;
   color: #333;
   cursor: pointer;
   transition: background 0.2s ease, border-color 0.2s ease;
+  margin: 0;
 }
 
-.in-queue-checkbox-label:hover {
+.language-reset-button{
+	background: #f47521;
+	color: #ffffff;
+}
+
+.in-queue-checkbox-label:hover{
   background: #e4e4e4;
   border-color: #999;
+}
+
+.language-reset-button:hover{
+	background: #ffffff;
+	color: #f47521;
 }
 
 .in-queue-checkbox-label input[type="checkbox"] {
@@ -209,4 +189,12 @@
   accent-color: #007bff;
   transform: scale(1.1);
   cursor: pointer;
+}
+
+.queue-actions-wrapper{
+	display: grid;
+    grid-column: auto;
+    grid-template-columns: repeat(2, auto);
+    gap: 1rem;
+	padding: 1rem;
 }
