@@ -213,12 +213,6 @@
   padding: 1rem;
 }
 
-.featured-episode progress {
-  background: var(
-    --crunchyroll-simulcast-progressbar-background-color
-  ) !important;
-}
-
 .featured-episode progress::-webkit-progress-value {
   background: var(
     --crunchyroll-simulcast-progressbar-background-color
