@@ -1,0 +1,186 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <style>
+      :root {
+        --mtrl-bg: #fffaf5;
+        --mtrl-surface: #ffffff;
+        --mtrl-border: #f3d7bd;
+        --mtrl-accent: #ff8a00;
+        --mtrl-accent-dark: #e56d00;
+        --mtrl-text: #2d1f1d;
+        --mtrl-muted: #6d534b;
+        --mtrl-shadow: rgba(255, 138, 0, 0.15);
+        --mtrl-shadow-strong: rgba(255, 138, 0, 0.25);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        background: var(--mtrl-bg);
+        color: var(--mtrl-text);
+        font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      }
+
+      body {
+        min-width: 320px;
+        padding: 14px;
+      }
+
+      .card {
+        background: var(--mtrl-surface);
+        border: 1px solid rgba(243, 215, 189, 0.9);
+        border-radius: 18px;
+        box-shadow: 0 8px 20px var(--mtrl-shadow);
+        padding: 18px 16px 16px;
+      }
+
+      h1 {
+        margin: 0 0 18px;
+        font-size: 1.4rem;
+        line-height: 1.2;
+        font-weight: 700;
+        color: var(--mtrl-accent-dark);
+        text-align: center;
+        letter-spacing: 0.02em;
+      }
+
+      .input-field {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      label {
+        font-size: 0.78rem;
+        font-weight: 600;
+        color: var(--mtrl-muted);
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+      }
+
+      .color-field {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        background: linear-gradient(180deg, #fffdfb, #fff8f2);
+        border: 1px solid var(--mtrl-border);
+        border-radius: 12px;
+        padding: 10px 12px;
+        box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.04);
+        min-height: 60px;
+      }
+
+      .input-color {
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 40px;
+        border-radius: 10px;
+        overflow: hidden;
+        border: 1px solid rgba(0, 0, 0, 0.08);
+        background: #fff;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+      }
+
+      .input-color input[type="color"] {
+        appearance: none;
+        -webkit-appearance: none;
+        width: 100%;
+        height: 100%;
+        border: none;
+        background: transparent;
+        padding: 0;
+        cursor: pointer;
+        min-width: 48px;
+        min-height: 36px;
+      }
+
+      .input-color input[type="color"]:focus-visible {
+        outline: 3px solid rgba(247, 140, 37, 0.5);
+        outline-offset: 3px;
+      }
+
+      .input-color input[type="color"]::-webkit-color-swatch-wrapper {
+        padding: 0;
+      }
+
+      .input-color input[type="color"]::-webkit-color-swatch {
+        border: none;
+        border-radius: 9px;
+      }
+
+      .toast {
+        position: fixed;
+        inset: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        background: rgba(22, 22, 22, 0.28);
+        color: #fff;
+        font-size: 0.9rem;
+        font-weight: 700;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transition: opacity 0.18s ease, visibility 0.18s ease;
+        z-index: 50;
+      }
+
+      .toast.visible {
+        opacity: 1;
+        visibility: visible;
+      }
+
+      .toast .toast-content {
+        min-width: 180px;
+        max-width: min(220px, calc(100% - 32px));
+        padding: 14px 18px;
+        border-radius: 14px;
+        box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        background: #4caf50;
+      }
+
+      .toast.error .toast-content {
+        background: #f44336;
+      }
+    </style>
+  </head>
+  <body>
+<div class="card" role="dialog" aria-labelledby="popupTitle" aria-describedby="userColorLabel">
+      <h1 id="popupTitle"></h1>
+
+      <div class="input-field">
+        <label id="userColorLabel" for="userColorInput"></label>
+
+        <div class="color-field">
+          <div class="input-color">
+            <input
+              type="color"
+              id="userColorInput"
+              value="#ff0000"
+              aria-label="Select a color"
+              title="Select a color"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div id="saveToast" class="toast" aria-live="polite" aria-atomic="true" role="status"></div>
+    </div>
+
+    <script src="scripts/popup.js"></script>
+  </body>
+</html>
